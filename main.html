@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+
+<html>
+    <style>
+        @font-face { font-family: BEBAS; src: url('BEBAS.TTF'); } 
+        body{
+            background-color: black;
+        }
+        
+        .sidebar {
+            position: fixed;
+            top: 8px;
+            left: 16px;
+            overflow-wrap: break-word;
+        }
+        .topright {
+            position: fixed;
+            top: 8px;
+            left: 1400px;
+            overflow-wrap: break-word;
+        }
+        .normal {
+            position: absolute;
+            right: 0px;
+            width: 1325px;
+            border: 3px solid #ffffff;
+            padding: 10px;
+            overflow-wrap: break-word;
+        }
+        h1 {
+            color: white;
+            @font-face { font-family: BBEBAS; src: url('BEBAS.ttf'); } 
+            font-family: BEBAS
+            }
+        h2 {
+            color: white;
+            @font-face { font-family: BBEBAS; src: url('BEBAS.ttf'); } 
+            font-family: BEBAS
+        }
+        h3 {
+            color: white;
+            @font-face { font-family: BBEBAS; src: url('BEBAS.ttf'); } 
+            font-family: BEBAS
+        }
+        accomp {
+            color: white;
+            font-size: 12px;
+            @font-face { font-family: BBEBAS; src: url('BEBAS.ttf'); } 
+            font-family: BEBAS
+        }
+    </style>
+    <head>
+        <title>S6  s6</title>
+        <div class="topright">
+            <img src="cdn/logohq.png" width="120px" alt="s6">
+        </div>
+    <div class="sidebar">
+        <center>
+        <img src="cdn/logohq.png" width="120px">
+        <h1>s6.github.io</h1>
+            
+            
+            
+        <div id="factDisplay"></div>
+        <a href="about.html">
+            <h2>About</h2>
+            </a>
+        <a href="mywork.html">
+            <h2>My Work</h2>
+            </a>
+        <a href="resume.html">
+        <h2>Resume</h2>
+            </a>
+        <a href="citations.html">
+        <h2>Citations</h2>
+            </a>
+            <accomp>
+        <a href="accomplishments.html">
+        <h2>Accomplishments</h2>
+            </a>
+            </accomp>
+        
+        
+        </center>
+             </div>
+    
+    </head>
+
+    <body>
+        <div class="normal">
+            <center>
+            <h1>Woah woah woah woah, welcome to s6! The website that will hold up my entire future.</h1>
+                <h3>→→→→ If you have no idea who I am and what this is about, please ←←←← <a href="https://www.google.com">click</a> off you are not supposed to be here. Please leave.</h3>
+                <h3>If you do know who I am, welcome to my personal website. What's going to be here are things that will be important for my future, such as my Resume, my Accomplishments, my Work, and things like that.</h3>
+                <h2>Zoom in/out if the website looks funny/messed up, it should look <a href="cdn/web.png">like this.</a></h2>
+                <h3>Everything after this will be update logs.</h3>
+                
+                
+                
+                
+                <h2>Navigator</h2>
+                <h3><a href="about.html">About me</a> | <a href="mywork.html">My Work</a> | <a href="resume.html">Resume</a> | <a href="citations.html">Citations</a> | <a href="accomplishments.html">Accomplishments</a></h3>
+                
+                </center>
+                
+        </div>
+    
+    </body>
+
+</html>
+
+<script>
+        const facts = ["<h3>skewling rn</h3>", "<h3>ok so what if</h3>", "<h3>what's an s6??</h3>", "<h3>HEEEYYYY</h3>", "<H3>HOOOOOOO</h3>", "<h3>SQUAM</h3>", "<h3>hi</h3>", "<h3>my stomach hurts</h3>", "<h3>it is 4:10 PM</h3>", "<h3>click off</h3>", "<h3>this changes btw</h3>", "<h3><3</h3>", "<h3>not wikipedia</h3>", "<h3>where am i?</h3>", "<h3>where are you?</h3>", "<h3>pls dont mess up</h3>", "<h3>what's on ur mind?</h3>", "<h3>click refresh</h3>", "<h3>made during school</h3>", "<h3>made during class</h3>", "<h3>how do i</h3>", "<h3>SIDEBAR BREAKER LOL SIDEBAR BREAKER LOL SIDEBAR BREAKER LOL SIDEBAR BREAKER LOL SIDEBAR BREAKER LOL SIDEBAR BREAKER LOL SIDEBAR BREAKER LOL SIDEBAR BREAKER LOL </h3>"];
+
+!function newFact() {
+  const randomFact = Math.floor(Math.random() * facts.length);
+  document.getElementById('factDisplay').innerHTML = facts[randomFact];
+}();
+        </script>

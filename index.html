@@ -1,0 +1,71 @@
+<!DOCTYPE HTML> 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @font-face { font-family: BEBAS; src: url('BEBAS.TTF'); }
+        .s6 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: black;
+        }
+        #text{
+            height: 160px;
+            font-size:  20px;
+            color: white;
+            text-shadow:1px 1px 10px #00c0c7, 1px 1px 10px #00c0c7;
+            animation: animate 5s linear infinite;
+            @font-face { font-family: BBEBAS; src: url('BEBAS.ttf'); } 
+            font-family: BEBAS
+        }
+        @keyframes animate{
+            from{
+                transform: rotate(0deg)
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        span{
+            position: absolute;
+            transform-origin: 0 80px;
+        }
+    </style>
+        <h1 id="text">s6.github.io</h1>
+        
+        <script>
+            const text = document.getElementById
+                ('text');
+            text.innerHTML = text.textContent.replace
+                (/\S/g,"<span>$&</span>");
+            const ele = document.querySelectorAll
+                 ('span');
+            for(var i = 1;i<ele.length;i++){
+                ele[i].style.transform="rotate("+i*16.5
+                    +"deg)";
+            }
+        </script>
+    </head>
+        <title>s6</title>
+    <body>
+        <div class="s6">
+            <a href="main.html">
+        <img src="cdn/logohq.png" width="120px">
+            </a>
+        </div>
+    </body>
+        
+</html>

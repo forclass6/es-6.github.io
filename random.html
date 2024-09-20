@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+    <style>
+    
+    </style>
+    <head>
+    
+    </head>
+    
+    <body>
+
+        
+        <div id="factDisplay"></div>
+    </body>
+</html>
+
+    <script>
+        const facts = ["<h3>skewling rn</h3>", "<h3>ok so what if</h3>", "<h3>what's an s6??</h3>", "<h3>HEEEYYYY</h3>", "<H3>HOOOOOOO</h3>", "<h3>bwomp</h3>", "<h3>hi</h3>", "<h3>my stomach hurts</h3>", "<h3>it is 4:10 PM</h3>"];
+
+!function newFact() {
+  const randomFact = Math.floor(Math.random() * facts.length);
+  document.getElementById('factDisplay').innerHTML = facts[randomFact];
+}();
+        </script>
